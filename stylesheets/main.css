@@ -7,14 +7,92 @@ html, body {
 
 .navbar {
   display: fixed;
-  overflow: hidden;
-  text-align: center;
   top: 0;
   width: 100%;
-  height: 25%;
+  min-width: 420px;
+  height: 105px;
   z-index: 2;
-  background-color: rgba(235,235,235,0.4);
-  box-sizing: border-box;
+}
+
+.navbar .logo {
+  display: none;
+  float: left;
+  padding: 20px 20px 21px 20px;
+  background: red;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+
+.navbar .search-items {
+  float: right;
+  display: none;
+  overflow: hidden;
+  padding: 17px 20px 17px 20px;
+  border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+.nav-top {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  background: black;
+}
+
+.nav-top-left {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.nav-top-right {
+  float: right;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+
+.nav-top a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+}
+
+.nav-middle {
+  width: 100%;
+  height: 45px;
+  background: rgba(235,235,235,0.4);
+}
+
+.nav-middle-links {
+  display: inline-block;
+  margin-left: 13px;
+  height: 100%;
+}
+
+.nav-middle a {
+  position: relative;
+  top: 10px;
+  padding: 8px;
+  font-size: 14px;
+  color: rgba(115,115,115,0.6);
+  text-decoration: none;
+}
+
+.nav-bottom {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: rgb(255,221,51);
+  font-size: 13px;
+}
+
+.nav-bottom-text {
+  position: relative;
+  height: 30px;
+  top: 8px;
+  margin-left: 15px;
+  height: 100%;
 }
 
 .main_container {
@@ -22,4 +100,32 @@ html, body {
   height: 100%;
   background-color: rgba(245,245,245,0.3);
   text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar .logo {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .navbar .logo {
+    float: none;
+    padding: 10px 20px ;
+  }
+
+  .nav-top, .nav-middle  {
+    display: none;
+  }
+
+  .search-items {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .navbar .nav-bottom-text {
+    margin-left: 2px;
+    font-size: 10px ;
+  }
 }
