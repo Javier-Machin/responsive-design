@@ -193,8 +193,7 @@ a.selected-item {
   }
 
   .top-header #header-a { 
-    background-size: 125% 100%;
-    background-position: -65px 0;
+    background-size: cover;
   }
 
   .top-header #header-a p {
@@ -220,10 +219,6 @@ a.selected-item {
 
   .header-item {
     background-size: cover;
-  }
-
-  .top-header #header-a { 
-    background-size: 140% 100%;
   }
 
 }
