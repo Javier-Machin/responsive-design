@@ -173,6 +173,80 @@ a.selected-item {
   top: 240px;
 }
 
+.latest-news {
+  display: grid;
+  grid-template-areas:
+                    "i i i i"
+                    "a b c d"
+                    "e f g h";
+  row-gap: 30px;
+  column-gap: 25px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.latest-news-item {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.latest-news-author {
+  position: relative;
+  top: 6px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.3);
+}
+
+.latest-news-item p {
+  margin:0;
+}
+
+.latest-news-item img  {
+  width: 100%;
+}
+
+#latest-news-a {
+  grid-area: a;
+}
+
+#latest-news-b {
+  grid-area: b;
+}
+
+#latest-news-c {
+  grid-area: c;
+}
+
+#latest-news-d {
+  grid-area: d;
+}
+
+#latest-news-e {
+  grid-area: e;
+}
+
+#latest-news-f {
+  grid-area: f;
+}
+
+#latest-news-g {
+  grid-area: g;
+}
+
+#latest-news-h {
+  grid-area: h;
+}
+
+#latest-news-i {
+  grid-area: i;
+  color: #f42;
+  position: relative;
+  top: 20px;
+  text-align: left;
+  align-self: end;
+  margin: 0;
+}
 
 @media only screen and (max-width: 1590px) {
   
@@ -206,6 +280,14 @@ a.selected-item {
 
 }
 
+@media only screen and (max-width: 1120px) {
+
+  .latest-news {
+    width: 98%;
+  }
+
+}
+
 @media only screen and (max-width: 1032px) {
   
   .navbar .logo {
@@ -219,6 +301,14 @@ a.selected-item {
 
   .header-item {
     background-size: cover;
+  }
+
+  .latest-news {
+    grid-template-areas:
+                      "i i i"
+                      "a b c"
+                      "d e f"
+                      "g h j";
   }
 
 }
@@ -258,6 +348,7 @@ a.selected-item {
 
   .top-header {
     margin-top: 70px;
+    width: 98%;
     height: 620px;
     grid-template-areas: "a" 
                          "b" 
@@ -280,6 +371,30 @@ a.selected-item {
   
   .header-item-text {
     font-size: 24px;
+  }
+
+  .latest-news {
+    grid-template-areas:
+                      "i"
+                      "a"
+                      "b"
+                      "c"
+                      "d"
+                      "e"
+                      "f"
+                      "g"
+                      "h";
+  }
+
+  .latest-news-title h2 {
+    margin: 10px 12px;
+  }
+
+  .latest-news img {
+    float: left;
+    height: 72px;
+    width: 72px;
+    margin: 0 12px;
   } 
 
 }
