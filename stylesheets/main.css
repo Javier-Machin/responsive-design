@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Sans-Serif;
+  background: rgb(245,245,245);
 }
 
 .navbar {
@@ -111,7 +112,8 @@ a.selected-item {
 
 .main_container {
   width: 100%;
-  background-color: rgba(220,220,220,0.3);
+  overflow: hidden;
+  background: rgb(245,245,245);
   text-align: center;
   box-sizing: border-box;
 }
